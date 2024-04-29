@@ -24,7 +24,7 @@ $badword = $_GET['badword'];
         <?php echo  strlen($textarea) . ' caratteri' ?>
     </p>
     <p class="text-center">La tua frase censurata è: <br>
-        <?php echo "<strong>" . str_replace($badword, '***', $textarea) . "</strong>"?>
+        <?php echo "<strong>" . str_replace(trim($badword), '***', $textarea) . "</strong>"?>
     </p>
     <p class="text-center">la parola censurata è: <?php echo "<strong>$badword</strong>" ?></p>
 </body>
